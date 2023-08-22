@@ -5,7 +5,8 @@
   "description": "Custom alert plugin for TrueNAS Scale using ntfy back-end",
   "module": "index.mjs",
   "scripts": {
-    "start": "node index.mjs",
+    "start": "NODE_EXTRA_CA_CERTS=/usr/local/share/ca-certificates/rootCA.pem node index.mjs",
+    "_start": "node index.mjs",
     "test": "tests/test1.sh"
   },
   "keywords": [
