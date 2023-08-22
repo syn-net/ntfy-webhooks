@@ -7,6 +7,7 @@ dotenv.config({
   path: resolve(cwd(), `.env`),
 });
 
+import os from 'node:os';
 import assert from 'node:assert';
 import {resolve} from 'node:path';
 import {
@@ -29,14 +30,16 @@ const PROTO = useTLS ? `https` : `http`;
 
 const DEBUG =
   ENV[`DEBUG`] && ENV[`DEBUG`] == true || ENV[`DEBUG`] && ENV[`DEBUG`] === `true` || false;
+const APP_HOSTNAME = ENV[`APP_HOSTNAME`] || os.hostname();
+const APP_PORT = ENV[`APP_PORT`] || 80;
 const NTFY_HOSTNAME = ENV[`NTFY_HOSTNAME`] || ``;
 const NTFY_PORT = ENV[`NTFY_PORT`] || 443;
 const NTFY_PATH = ENV[`NTFY_PATH`] || `/`;
 const NTFY_PRIO = ENV[`NTFY_PRIORITY`] || 3 ;
 
 const serverOptions = {
-  host: ENV[`APP_HOSTNAME`],
-  port: ENV[`APP_PORT`],
+  host: APP_HOSTNAME,
+  port: APP_PORT,
 };
 
 const fetchOptions = {
