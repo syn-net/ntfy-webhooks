@@ -16,6 +16,8 @@ npm run start
 
 **WARNING**: Although, I do my best to adhere to sane defaults for `.env`, there will be times where you may need to review it and make modifications to suit your space.
 
+**TODO(jeff)**:: Write user documentation as soon as we begin working on this side project again... I seem to have forgotten how to demonstrate this software! -_- 
+
 ## Reference Documents
 
 1. <https://www.truenas.com/community/threads/creating-a-custom-alert.21269/>
