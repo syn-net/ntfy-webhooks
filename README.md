@@ -16,7 +16,13 @@ npm run start
 
 **WARNING**: Although, I do my best to adhere to sane defaults for `.env`, there will be times where you may need to review it and make modifications to suit your space.
 
-**TODO(jeff)**:: Write user documentation as soon as we begin working on this side project again... I seem to have forgotten how to demonstrate this software! -_- 
+**TODO(jeff)**: Write user documentation as soon as we begin working on this side project again... I seem to have forgotten how to demonstrate this software! -_- 
+
+```shell
+curl -X POST -d '{"topic": "lan", "message": "hi"}' https://notifications.lan:443
+```
+
+**STUB(jeff)**: Add tip for adding webhook via TrueNAS Scale web GUI; hint: **Slack alert** service type
 
 ### certificates (stub)
 
