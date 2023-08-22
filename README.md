@@ -9,9 +9,12 @@ TrueNAS Scale does not have an official means of developing a custom alert plugi
 ```shell
 git clone https://github.com/syn-net/ntfy-webhooks.git ntfy-webhooks.git
 cd ntfy-webhooks.git
-npm install
+npm install # install node_modules
+cp -av .env.defaults .env
 npm run start
 ```
+
+**WARNING**: Although, I do my best to adhere to sane defaults for `.env`, there will be times where you may need to review it and make modifications to suit your space.
 
 ## Reference Documents
 
