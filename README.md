@@ -18,6 +18,14 @@ npm run start
 
 **TODO(jeff)**:: Write user documentation as soon as we begin working on this side project again... I seem to have forgotten how to demonstrate this software! -_- 
 
+### certificates (stub)
+
+```shell
+# I use this in conjunction with NODE_EXTRA_CA_CERTS
+/usr/local/share/ca-certificates/...
+update-ca-certificates
+```
+
 ## Reference Documents
 
 1. <https://www.truenas.com/community/threads/creating-a-custom-alert.21269/>
