@@ -1,6 +1,11 @@
 {
+  "engines": {
+    "node": "^16",
+    "npm": "^8",
+    "yarn": "^1.22"
+  },
   "type": "module",
-  "name": "ntfy-webhook",
+  "name": "ntfy-webhooks",
   "version": "0.0.1",
   "description": "Custom alert plugin for TrueNAS Scale using ntfy back-end",
   "module": "index.mjs",
@@ -24,8 +29,5 @@
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5"
-  },
-  "engines": {
-    "node": "^16"
   }
 }
